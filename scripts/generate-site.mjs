@@ -111,7 +111,8 @@ for (const [code, directory] of locales) {
   const path = join(root, directory, "index.html");
   if (checkOnly) {
     const existing = await readFile(path, "utf8");
-    if (existing !== output) throw new Error(`Generated page is stale: ${path}`);
+    const normalizedExisting = existing.replaceAll("\r\n", "\n");
+    if (normalizedExisting !== output) throw new Error(`Generated page is stale: ${path}`);
   } else {
     await mkdir(dirname(path), { recursive: true });
     await writeFile(path, output, "utf8");
