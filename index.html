@@ -3,62 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CombatGlass is a local-first, observation-only combat analyzer for Windows. Public development preview; no downloads yet.">
-  <title>CombatGlass — See the fight. Touch nothing.</title>
+  <meta name="description" content="A calm, local-first Windows combat analyzer for AION 2 Global. No account, telemetry, game modification or public download yet.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CombatGlass — Local combat clarity for AION 2">
+  <meta property="og:description" content="A calm, local-first Windows combat analyzer for AION 2 Global. No account, telemetry, game modification or public download yet.">
+  <meta property="og:url" content="https://relis-lol.github.io/combatglass/">
+  <link rel="canonical" href="https://relis-lol.github.io/combatglass/">
+  <link rel="alternate" hreflang="en" href="https://relis-lol.github.io/combatglass/">
+  <link rel="alternate" hreflang="de" href="https://relis-lol.github.io/combatglass/de/">
+  <link rel="alternate" hreflang="fr" href="https://relis-lol.github.io/combatglass/fr/">
+  <link rel="alternate" hreflang="es-ES" href="https://relis-lol.github.io/combatglass/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://relis-lol.github.io/combatglass/pt-br/">
+  <link rel="alternate" hreflang="ru" href="https://relis-lol.github.io/combatglass/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://relis-lol.github.io/combatglass/">
+  <title>CombatGlass — Local combat clarity for AION 2</title>
   <link rel="icon" href="assets/combatglass-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-default-route="true">
   <a class="skip" href="#main">Skip to content</a>
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="CombatGlass home">
-      <img src="assets/combatglass-mark.svg" width="38" height="38" alt="">
-      <span>CombatGlass</span>
+    <a class="brand" href="#top" aria-label="CombatGlass">
+      <img src="assets/combatglass-mark.svg" width="38" height="38" alt=""><span>CombatGlass</span>
     </a>
-    <nav aria-label="Primary navigation">
-      <a href="#trust">Trust</a><a href="#status">Status</a><a href="https://github.com/Relis-lol/combatglass/blob/main/FAQ.md">FAQ</a><a href="https://github.com/Relis-lol/combatglass">GitHub</a>
-    </nav>
+    <div class="header-actions"><nav aria-label="Primary navigation"><a href="#trust">Trust</a><a href="#status">Status</a><a href="#faq">FAQ</a><a href="https://github.com/Relis-lol/combatglass">GitHub</a></nav><label class="language"><span>Language</span><select id="language-select" aria-label="Language"><option data-code="en" value="./" selected>English</option><option data-code="de" value="de/">Deutsch</option><option data-code="fr" value="fr/">Français</option><option data-code="es-ES" value="es/">Español</option><option data-code="pt-BR" value="pt-br/">Português (Brasil)</option><option data-code="ru" value="ru/">Русский</option></select></label></div>
   </header>
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-copy">
-        <div class="eyebrow">AION 2 GLOBAL · WINDOWS 10/11</div>
-        <h1>See the fight.<br><span>Touch nothing.</span></h1>
-        <p class="lede">A calm combat overlay with clear player contribution, understandable skill detail, and local history — all processed on your PC.</p>
-        <div class="trustline" aria-label="Core privacy promises">
-          <span>Local-only</span><span>No account</span><span>No telemetry</span><span>Free</span>
-        </div>
-        <div class="notice"><span aria-hidden="true"></span><strong>Development preview</strong> — Demo Mode is ready; downloads and live Global capture are not.</div>
-        <div class="actions"><a class="button primary" href="#interface">See how it works</a><a class="button" href="https://github.com/Relis-lol/combatglass/blob/main/PRIVACY.md">Privacy promise</a></div>
-      </div>
-      <figure class="hero-product">
-        <img src="assets/product-preview.svg" alt="Dark CombatGlass Demo Mode interface with synthetic player damage rows and skill analysis">
-        <figcaption><strong>Demo Mode</strong><span>Synthetic data · no game access</span></figcaption>
-      </figure>
+      <div class="hero-copy"><div class="eyebrow">Europe-first · Global-ready</div><h1>See the fight.<br><span>Touch nothing.</span></h1><p class="lede">A calm Windows overlay for readable encounters, useful skill analysis and local history—without touching the game.</p><p class="positioning">Designed first for European players and open to the wider AION 2 community.</p><div class="trustline" aria-label="Product promises"><span>Local processing</span><span>No account</span><span>No telemetry</span><span>Free</span></div><div class="notice"><span aria-hidden="true"></span><strong>Development preview</strong> — downloads are not available yet</div><div class="actions"><a class="button primary" href="#interface">Explore the interface</a><a class="button" href="PRIVACY.md">Read the privacy promise</a></div></div>
+      <figure class="hero-product"><img src="assets/product-preview.svg" alt="CombatGlass development interface showing encounter damage and contribution"><figcaption><strong>Demo Mode</strong><span>Synthetic data · no capture required</span></figcaption></figure>
     </section>
-    <section class="interface" id="interface" aria-labelledby="interface-title">
-      <div class="section-copy"><div class="eyebrow">CALM IN COMBAT. DEEP AFTER.</div><h2 id="interface-title">Only the numbers you need.</h2><p>The overlay stays restrained. Select a player when you want verified skill and timeline detail. Unsupported values say “Unavailable.”</p></div>
-      <div class="flow">
-        <article><span>During the fight</span><h3>Read the group at a glance.</h3><p>Encounter state, time, player, DPS, total damage and contribution stay clear under pressure.</p></article>
-        <article><span>After the fight</span><h3>Open detail when you need it.</h3><p>Choose a player to move from the result into verified skill contribution and timeline analysis.</p></article>
-        <article><span>Between fights</span><h3>Keep history under your control.</h3><p>Encounters remain bounded and local. No account, upload, public profile or licence server.</p></article>
-      </div>
-    </section>
-    <section class="principles" id="trust" aria-labelledby="trust-title">
-      <div class="section-copy"><div class="eyebrow">THE BOUNDARY IS THE PRODUCT</div><h2 id="trust-title">Trust you can understand.</h2></div>
-      <div class="grid">
-        <article><div class="number">01</div><h3>Never inside the game</h3><p>No process memory, code injection, graphics hooks, game files or input hooks.</p></article>
-        <article><div class="number">02</div><h3>Receive-only by design</h3><p>No packet sending, modification, delay, dropping, proxy or local network listener.</p></article>
-        <article><div class="number">03</div><h3>Local by default</h3><p>No account, backend, telemetry, automatic uploads or cloud history in version 0.x.</p></article>
-        <article><div class="number">04</div><h3>Unknown means unknown</h3><p>A protocol change stops combat output instead of producing believable bad data.</p></article>
-      </div>
-    </section>
-    <section class="status" id="status" aria-labelledby="status-title">
-      <div><div class="eyebrow">BUILD STATUS</div><h2 id="status-title">The product before the protocol.</h2><p>Demo Mode, native interface, bounded encounter engine, deterministic replay, TCP reassembly and strict parser contracts are being built first. Live Global decoding remains disabled until independently verified.</p></div>
-      <ol><li class="done"><span>01</span><div><strong>Foundation</strong><small>Security, architecture, Demo Mode</small></div></li><li class="active"><span>02</span><div><strong>Validation</strong><small>AION 2 Global traffic and protocol</small></div></li><li><span>03</span><div><strong>Release readiness</strong><small>Performance, signing, clean-VM review</small></div></li></ol>
-    </section>
-    <section class="closing"><img src="assets/combatglass-mark.svg" width="64" height="64" alt=""><h2>Completely free.<br>Deliberately quiet.</h2><p>No subscriptions, feature gates or combat-time donation prompts. Optional coffee support may come later; no donation link is configured today.</p><a class="button" href="https://github.com/Relis-lol/combatglass">Follow development on GitHub</a></section>
+    <section class="interface" id="interface" aria-labelledby="interface-title"><div class="section-copy"><div class="eyebrow">Useful first</div><h2 id="interface-title">Read the encounter before the detail.</h2><p>The primary view answers what happened now. Skill breakdowns, timelines and diagnostics stay available without competing for attention.</p></div><div class="flow"><article><span>Live encounter</span><h3>See combat state immediately</h3><p>Clear active, paused and unsupported states prevent stale or invented certainty.</p></article><article><span>Fight detail</span><h3>Understand the contribution</h3><p>Move from totals to skills, criticals and supported context in a deliberate hierarchy.</p></article><article><span>Local history</span><h3>Review on your computer</h3><p>A bounded encounter history remains local and can be deleted from the app.</p></article></div></section>
+    <section class="principles" id="trust" aria-labelledby="trust-title"><div class="section-copy"><div class="eyebrow">The boundary is the product</div><h2 id="trust-title">Useful without becoming invasive.</h2></div><div class="grid"><article><div class="number">01</div><h3>Local by design</h3><p>Combat processing and opted-in history stay on the computer. There is no account or cloud service.</p></article><article><div class="number">02</div><h3>Passive capture</h3><p>No memory reading, injection, packet modification, proxying or input automation.</p></article><article><div class="number">03</div><h3>Fail closed</h3><p>Unknown or unverified protocol data stops combat output instead of producing believable nonsense.</p></article><article><div class="number">04</div><h3>Free first</h3><p>No subscription, premium DPS features, paywall or licence server. Any future coffee support is voluntary.</p></article></div></section>
+    <section class="status" id="status" aria-labelledby="status-title"><div><div class="eyebrow">Current status</div><h2 id="status-title">Foundation built. Live confidence pending.</h2><p>Demo Mode and the local product foundation exist. AION 2 Global decoding stays disabled until controlled traffic can be validated independently.</p></div><ol><li class="done"><span>01</span><div><strong>Product foundation</strong><small>Demo UI, encounter engine, history and strict parser contracts</small></div></li><li class="active"><span>02</span><div><strong>Protocol validation</strong><small>Awaiting controlled AION 2 Global evidence</small></div></li><li><span>03</span><div><strong>Public Windows release</strong><small>Only after security, performance and clean-VM approval</small></div></li></ol></section>
+    <section class="faq" id="faq" aria-labelledby="faq-title"><div class="section-copy"><div class="eyebrow">FAQ</div><h2 id="faq-title">Straight answers before installation.</h2></div><div class="faq-list"><details><summary>Can I download CombatGlass now?</summary><p>No. This is a public development preview; no executable, installer or portable archive is published.</p></details><details><summary>Does CombatGlass need an account or send telemetry?</summary><p>No. The v0.x product is local-only, without accounts, telemetry, cloud uploads or a licence server.</p></details><details><summary>Does it read game memory or automate play?</summary><p>No. The architecture forbids memory access, injection, packet modification, proxying and input automation.</p></details><details><summary>Is using a passive meter guaranteed safe for my account?</summary><p>No third party can promise that. Rules and enforcement can change; review the game terms and use third-party tools at your own risk.</p></details></div></section>
+    <section class="support-panel"><div><div class="eyebrow">Community</div><h2>Questions, bugs or product ideas?</h2><p>Use the public issue templates, but never attach packet captures, tokens, private logs or personal information.</p><p class="languages-note">Interface languages: English, German, French, Spanish (Spain), Portuguese (Brazil) and Russian.</p></div><a class="button" href="https://github.com/Relis-lol/combatglass">Open GitHub</a></section>
+    <section class="legal-note"><strong>Independent third-party project</strong><p>CombatGlass is not affiliated with or endorsed by NC. A passive design is not a guarantee of account safety. The English disclaimer is the canonical legal text.</p><a href="DISCLAIMER.md">Read the canonical English disclaimer</a></section>
   </main>
-  <footer><span>CombatGlass is independent and not affiliated with or endorsed by NC.</span><span><a href="https://github.com/Relis-lol/combatglass/blob/main/SECURITY.md">Security</a><a href="https://github.com/Relis-lol/combatglass/blob/main/DISCLAIMER.md">Disclaimer</a><a href="https://github.com/Relis-lol/combatglass/blob/main/SUPPORT.md">Support</a></span></footer>
+  <footer><span>Independent third-party project · closed-source freeware</span><span><a href="SECURITY.md">Security</a><a href="PRIVACY.md">Privacy</a><a href="SUPPORT.md">Support</a></span></footer>
+  <script src="assets/language.js" defer></script>
 </body>
 </html>

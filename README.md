@@ -6,7 +6,7 @@
 
 <p align="center"><strong>See the fight. Touch nothing.</strong></p>
 
-<p align="center">Real-time combat clarity for AION 2 Global, designed to process locally without touching the game.</p>
+<p align="center">Real-time combat clarity for AION 2 Global, designed first for the European community and usable anywhere—without touching the game.</p>
 
 <p align="center">
   <strong>Local processing</strong> · <strong>No account</strong> · <strong>No telemetry</strong> · <strong>No memory reading</strong><br>
@@ -35,6 +35,14 @@ donation link is live today.
 - Streamer Mode with stable per-encounter aliases
 - Demo Mode with clearly synthetic data and no game or capture driver required
 - Unsupported statistics display as **Unavailable**, never believable zeroes
+
+## Languages
+
+The desktop interface and public product site are available in English,
+Deutsch, Français, Español, Português (Brasil) and Русский. English is the
+canonical fallback. Language detection and preferences stay local; there is no
+IP geolocation, account or locale telemetry. Translations are AI-assisted and
+awaiting review by native speakers and AION 2 community members.
 
 ## The boundary is the product
 

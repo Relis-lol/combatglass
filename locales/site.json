@@ -1,0 +1,164 @@
+{
+  "en": {
+    "meta": {"title": "CombatGlass — Local combat clarity for AION 2", "description": "A calm, local-first Windows combat analyzer for AION 2 Global. No account, telemetry, game modification or public download yet."},
+    "nav": {"skip": "Skip to content", "aria": "Primary navigation", "trust": "Trust", "status": "Status", "language": "Language"},
+    "hero": {"eyebrow": "Europe-first · Global-ready", "description": "A calm Windows overlay for readable encounters, useful skill analysis and local history—without touching the game.", "positioning": "Designed first for European players and open to the wider AION 2 community.", "promises_aria": "Product promises", "local": "Local processing", "account": "No account", "telemetry": "No telemetry", "free": "Free", "preview": "Development preview", "notice": "downloads are not available yet", "primary": "Explore the interface", "privacy": "Read the privacy promise", "image_alt": "CombatGlass development interface showing encounter damage and contribution", "image_note": "Synthetic data · no capture required"},
+    "interface": {"eyebrow": "Useful first", "title": "Read the encounter before the detail.", "body": "The primary view answers what happened now. Skill breakdowns, timelines and diagnostics stay available without competing for attention."},
+    "flow": [
+      {"label": "Live encounter", "title": "See combat state immediately", "body": "Clear active, paused and unsupported states prevent stale or invented certainty."},
+      {"label": "Fight detail", "title": "Understand the contribution", "body": "Move from totals to skills, criticals and supported context in a deliberate hierarchy."},
+      {"label": "Local history", "title": "Review on your computer", "body": "A bounded encounter history remains local and can be deleted from the app."}
+    ],
+    "trust": {"eyebrow": "The boundary is the product", "title": "Useful without becoming invasive.", "cards": [
+      {"title": "Local by design", "body": "Combat processing and opted-in history stay on the computer. There is no account or cloud service."},
+      {"title": "Passive capture", "body": "No memory reading, injection, packet modification, proxying or input automation."},
+      {"title": "Fail closed", "body": "Unknown or unverified protocol data stops combat output instead of producing believable nonsense."},
+      {"title": "Free first", "body": "No subscription, premium DPS features, paywall or licence server. Any future coffee support is voluntary."}
+    ]},
+    "status": {"eyebrow": "Current status", "title": "Foundation built. Live confidence pending.", "body": "Demo Mode and the local product foundation exist. AION 2 Global decoding stays disabled until controlled traffic can be validated independently.", "foundation": "Product foundation", "foundation_note": "Demo UI, encounter engine, history and strict parser contracts", "validation": "Protocol validation", "validation_note": "Awaiting controlled AION 2 Global evidence", "release": "Public Windows release", "release_note": "Only after security, performance and clean-VM approval"},
+    "faq": {"title": "Straight answers before installation.", "items": [
+      {"question": "Can I download CombatGlass now?", "answer": "No. This is a public development preview; no executable, installer or portable archive is published."},
+      {"question": "Does CombatGlass need an account or send telemetry?", "answer": "No. The v0.x product is local-only, without accounts, telemetry, cloud uploads or a licence server."},
+      {"question": "Does it read game memory or automate play?", "answer": "No. The architecture forbids memory access, injection, packet modification, proxying and input automation."},
+      {"question": "Is using a passive meter guaranteed safe for my account?", "answer": "No third party can promise that. Rules and enforcement can change; review the game terms and use third-party tools at your own risk."}
+    ]},
+    "support": {"eyebrow": "Community", "title": "Questions, bugs or product ideas?", "body": "Use the public issue templates, but never attach packet captures, tokens, private logs or personal information.", "languages": "Interface languages: English, German, French, Spanish (Spain), Portuguese (Brazil) and Russian.", "action": "Open GitHub"},
+    "disclaimer": {"title": "Independent third-party project", "body": "CombatGlass is not affiliated with or endorsed by NC. A passive design is not a guarantee of account safety. The English disclaimer is the canonical legal text.", "english_link": "Read the canonical English disclaimer"},
+    "footer": {"independent": "Independent third-party project · closed-source freeware", "security": "Security", "privacy": "Privacy", "support": "Support"}
+  },
+  "de": {
+    "meta": {"title": "CombatGlass — Lokale Kampfübersicht für AION 2", "description": "Ein ruhiger, lokal arbeitender Windows-Kampfanalysator für AION 2 Global. Kein Konto, keine Telemetrie, keine Spielmodifikation und noch kein öffentlicher Download."},
+    "nav": {"skip": "Zum Inhalt springen", "aria": "Hauptnavigation", "trust": "Vertrauen", "status": "Status", "language": "Sprache"},
+    "hero": {"eyebrow": "Europa zuerst · Global bereit", "description": "Ein ruhiges Windows-Overlay für lesbare Begegnungen, nützliche Fertigkeitsanalyse und lokalen Verlauf — ohne das Spiel anzutasten.", "positioning": "Zuerst für Spieler in Europa entwickelt und offen für die weltweite AION-2-Community.", "promises_aria": "Produktversprechen", "local": "Lokale Verarbeitung", "account": "Kein Konto", "telemetry": "Keine Telemetrie", "free": "Kostenlos", "preview": "Entwicklungsvorschau", "notice": "Downloads sind noch nicht verfügbar", "primary": "Oberfläche ansehen", "privacy": "Datenschutzversprechen lesen", "image_alt": "CombatGlass-Entwicklungsoberfläche mit Schaden und Beitrag einer Begegnung", "image_note": "Synthetische Daten · keine Aufzeichnung nötig"},
+    "interface": {"eyebrow": "Das Nützliche zuerst", "title": "Erst die Begegnung lesen, dann die Details.", "body": "Die Hauptansicht beantwortet sofort, was passiert ist. Fertigkeiten, Zeitverläufe und Diagnose bleiben erreichbar, ohne um Aufmerksamkeit zu konkurrieren."},
+    "flow": [
+      {"label": "Live-Begegnung", "title": "Kampfstatus sofort erkennen", "body": "Klare Zustände für aktiv, pausiert und nicht unterstützt verhindern veraltete oder erfundene Gewissheit."},
+      {"label": "Kampfdetails", "title": "Den Beitrag verstehen", "body": "Eine klare Hierarchie führt von Summen zu Fertigkeiten, kritischen Treffern und unterstütztem Kontext."},
+      {"label": "Lokaler Verlauf", "title": "Auf deinem PC prüfen", "body": "Ein begrenzter Begegnungsverlauf bleibt lokal und kann in der App gelöscht werden."}
+    ],
+    "trust": {"eyebrow": "Die Grenze ist das Produkt", "title": "Nützlich, ohne übergriffig zu werden.", "cards": [
+      {"title": "Von Grund auf lokal", "body": "Kampfverarbeitung und aktivierter Verlauf bleiben auf dem Computer. Es gibt weder Konto noch Cloud-Dienst."},
+      {"title": "Passives Erfassen", "body": "Kein Speicherlesen, keine Injektion, Paketänderung, Proxyfunktion oder Eingabeautomatisierung."},
+      {"title": "Im Zweifel stoppen", "body": "Unbekannte oder ungeprüfte Protokolldaten stoppen die Ausgabe, statt glaubwürdig wirkenden Unsinn zu erzeugen."},
+      {"title": "Zunächst kostenlos", "body": "Kein Abo, keine Premium-DPS-Funktionen, Paywall oder Lizenzserver. Spätere Kaffee-Unterstützung wäre freiwillig."}
+    ]},
+    "status": {"eyebrow": "Aktueller Stand", "title": "Fundament fertig. Live-Vertrauen steht aus.", "body": "Demo-Modus und lokale Produktbasis existieren. Die AION-2-Global-Dekodierung bleibt deaktiviert, bis kontrollierter Datenverkehr unabhängig geprüft ist.", "foundation": "Produktfundament", "foundation_note": "Demo-Oberfläche, Begegnungs-Engine, Verlauf und strikte Parser-Verträge", "validation": "Protokollprüfung", "validation_note": "Wartet auf kontrollierte AION-2-Global-Nachweise", "release": "Öffentliche Windows-Version", "release_note": "Erst nach Freigabe von Sicherheit, Leistung und sauberer VM"},
+    "faq": {"title": "Klare Antworten vor der Installation.", "items": [
+      {"question": "Kann ich CombatGlass jetzt herunterladen?", "answer": "Nein. Dies ist eine öffentliche Entwicklungsvorschau; es wird keine ausführbare Datei, kein Installer und kein portables Archiv veröffentlicht."},
+      {"question": "Braucht CombatGlass ein Konto oder sendet es Telemetrie?", "answer": "Nein. Version 0.x arbeitet ausschließlich lokal — ohne Konten, Telemetrie, Cloud-Uploads oder Lizenzserver."},
+      {"question": "Liest es den Spielspeicher oder automatisiert es das Spielen?", "answer": "Nein. Die Architektur verbietet Speicherzugriff, Injektion, Paketänderung, Proxying und Eingabeautomatisierung."},
+      {"question": "Ist ein passives Messwerkzeug garantiert sicher für mein Konto?", "answer": "Das kann kein Drittanbieter versprechen. Regeln und Durchsetzung können sich ändern; prüfe die Spielbedingungen und nutze Drittanbieter-Tools auf eigenes Risiko."}
+    ]},
+    "support": {"eyebrow": "Community", "title": "Fragen, Fehler oder Produktideen?", "body": "Nutze die öffentlichen Issue-Vorlagen, aber füge niemals Paketmitschnitte, Tokens, private Logs oder persönliche Daten bei.", "languages": "Oberflächensprachen: Englisch, Deutsch, Französisch, Spanisch (Spanien), Portugiesisch (Brasilien) und Russisch.", "action": "GitHub öffnen"},
+    "disclaimer": {"title": "Unabhängiges Drittanbieterprojekt", "body": "CombatGlass ist weder mit NC verbunden noch von NC unterstützt. Ein passives Design garantiert keine Kontosicherheit. Der englische Haftungsausschluss ist der maßgebliche Rechtstext.", "english_link": "Maßgeblichen englischen Haftungsausschluss lesen"},
+    "footer": {"independent": "Unabhängiges Drittanbieterprojekt · proprietäre Freeware", "security": "Sicherheit", "privacy": "Datenschutz", "support": "Support"}
+  },
+  "fr": {
+    "meta": {"title": "CombatGlass — Analyse locale des combats AION 2", "description": "Un analyseur de combat Windows calme et local pour AION 2 Global. Aucun compte, aucune télémétrie, aucune modification du jeu et pas encore de téléchargement public."},
+    "nav": {"skip": "Aller au contenu", "aria": "Navigation principale", "trust": "Confiance", "status": "État", "language": "Langue"},
+    "hero": {"eyebrow": "Pensé pour l’Europe · Prêt pour le monde", "description": "Une interface Windows discrète pour des rencontres lisibles, une analyse utile des compétences et un historique local — sans toucher au jeu.", "positioning": "Conçu d’abord pour les joueurs européens, tout en restant ouvert à la communauté AION 2 mondiale.", "promises_aria": "Engagements du produit", "local": "Traitement local", "account": "Aucun compte", "telemetry": "Aucune télémétrie", "free": "Gratuit", "preview": "Aperçu de développement", "notice": "les téléchargements ne sont pas encore disponibles", "primary": "Découvrir l’interface", "privacy": "Lire l’engagement de confidentialité", "image_alt": "Interface de développement CombatGlass affichant dégâts et contribution d’une rencontre", "image_note": "Données synthétiques · aucune capture requise"},
+    "interface": {"eyebrow": "L’utile en premier", "title": "Lisez la rencontre avant les détails.", "body": "La vue principale répond immédiatement à ce qui vient de se passer. Compétences, chronologie et diagnostic restent accessibles sans détourner l’attention."},
+    "flow": [
+      {"label": "Rencontre en direct", "title": "Voir immédiatement l’état du combat", "body": "Des états actifs, en pause et non pris en charge clairement identifiés évitent toute fausse certitude."},
+      {"label": "Détail du combat", "title": "Comprendre la contribution", "body": "Une hiérarchie claire mène des totaux aux compétences, coups critiques et contexte pris en charge."},
+      {"label": "Historique local", "title": "Revoir sur votre ordinateur", "body": "Un historique limité reste local et peut être supprimé depuis l’application."}
+    ],
+    "trust": {"eyebrow": "La limite fait partie du produit", "title": "Utile sans devenir intrusif.", "cards": [
+      {"title": "Local par conception", "body": "Le traitement et l’historique activé restent sur l’ordinateur. Aucun compte ni service cloud."},
+      {"title": "Capture passive", "body": "Aucune lecture mémoire, injection, modification de paquets, fonction de proxy ou automatisation des commandes."},
+      {"title": "Arrêt en cas de doute", "body": "Les données inconnues ou non vérifiées interrompent la sortie au lieu de produire des résultats trompeurs."},
+      {"title": "Gratuit avant tout", "body": "Aucun abonnement, DPS premium, péage ou serveur de licence. Un éventuel café de soutien resterait volontaire."}
+    ]},
+    "status": {"eyebrow": "État actuel", "title": "Fondations prêtes. Confiance en direct à établir.", "body": "Le mode Démo et la base locale existent. Le décodage AION 2 Global reste désactivé jusqu’à validation indépendante d’un trafic contrôlé.", "foundation": "Fondations du produit", "foundation_note": "Interface de démonstration, moteur de rencontre, historique et contrats d’analyse stricts", "validation": "Validation du protocole", "validation_note": "En attente de preuves contrôlées sur AION 2 Global", "release": "Version Windows publique", "release_note": "Uniquement après validation sécurité, performances et machine virtuelle propre"},
+    "faq": {"title": "Des réponses claires avant l’installation.", "items": [
+      {"question": "Puis-je télécharger CombatGlass maintenant ?", "answer": "Non. Il s’agit d’un aperçu public de développement ; aucun exécutable, programme d’installation ou archive portable n’est publié."},
+      {"question": "CombatGlass exige-t-il un compte ou envoie-t-il de la télémétrie ?", "answer": "Non. La version 0.x reste entièrement locale, sans compte, télémétrie, envoi cloud ni serveur de licence."},
+      {"question": "Lit-il la mémoire du jeu ou automatise-t-il le jeu ?", "answer": "Non. L’architecture interdit l’accès mémoire, l’injection, la modification de paquets, le proxy et l’automatisation des commandes."},
+      {"question": "Un compteur passif est-il garanti sans risque pour mon compte ?", "answer": "Aucun tiers ne peut le garantir. Les règles et leur application peuvent changer ; consultez les conditions du jeu et utilisez les outils tiers à vos risques."}
+    ]},
+    "support": {"eyebrow": "Communauté", "title": "Questions, bugs ou idées produit ?", "body": "Utilisez les modèles de tickets publics, mais ne joignez jamais captures réseau, jetons, journaux privés ou données personnelles.", "languages": "Langues de l’interface : anglais, allemand, français, espagnol (Espagne), portugais (Brésil) et russe.", "action": "Ouvrir GitHub"},
+    "disclaimer": {"title": "Projet tiers indépendant", "body": "CombatGlass n’est ni affilié à NC ni approuvé par NC. Une conception passive ne garantit pas la sécurité du compte. La version anglaise de l’avertissement constitue le texte juridique de référence.", "english_link": "Lire l’avertissement anglais de référence"},
+    "footer": {"independent": "Projet tiers indépendant · logiciel gratuit propriétaire", "security": "Sécurité", "privacy": "Confidentialité", "support": "Assistance"}
+  },
+  "es-ES": {
+    "meta": {"title": "CombatGlass — Claridad de combate local para AION 2", "description": "Un analizador de combate para Windows sereno y local para AION 2 Global. Sin cuenta, telemetría, modificación del juego ni descarga pública por ahora."},
+    "nav": {"skip": "Saltar al contenido", "aria": "Navegación principal", "trust": "Confianza", "status": "Estado", "language": "Idioma"},
+    "hero": {"eyebrow": "Europa primero · Preparado para todos", "description": "Una interfaz de Windows discreta para encuentros legibles, análisis útil de habilidades e historial local, sin tocar el juego.", "positioning": "Diseñado primero para jugadores europeos y abierto a toda la comunidad global de AION 2.", "promises_aria": "Compromisos del producto", "local": "Procesamiento local", "account": "Sin cuenta", "telemetry": "Sin telemetría", "free": "Gratis", "preview": "Vista previa de desarrollo", "notice": "las descargas aún no están disponibles", "primary": "Explorar la interfaz", "privacy": "Leer el compromiso de privacidad", "image_alt": "Interfaz de desarrollo de CombatGlass con daño y contribución del encuentro", "image_note": "Datos sintéticos · no requiere captura"},
+    "interface": {"eyebrow": "Lo útil primero", "title": "Lee el encuentro antes que el detalle.", "body": "La vista principal responde primero qué acaba de ocurrir. Las habilidades, la cronología y el diagnóstico siguen disponibles sin competir por atención."},
+    "flow": [
+      {"label": "Encuentro en directo", "title": "Ve el estado del combate al instante", "body": "Los estados activo, pausado y no compatible evitan información antigua o certezas inventadas."},
+      {"label": "Detalle del combate", "title": "Comprende la contribución", "body": "Una jerarquía clara conduce de los totales a habilidades, críticos y contexto compatible."},
+      {"label": "Historial local", "title": "Revísalo en tu equipo", "body": "Un historial limitado de encuentros permanece local y puede borrarse desde la aplicación."}
+    ],
+    "trust": {"eyebrow": "El límite es el producto", "title": "Útil sin resultar invasivo.", "cards": [
+      {"title": "Local por diseño", "body": "El procesamiento y el historial habilitado permanecen en el equipo. No hay cuenta ni servicio en la nube."},
+      {"title": "Captura pasiva", "body": "Sin lectura de memoria, inyección, modificación de paquetes, proxy ni automatización de entradas."},
+      {"title": "Fallo seguro", "body": "Los datos de protocolo desconocidos o no verificados detienen la salida en vez de generar resultados engañosos."},
+      {"title": "Gratis desde el principio", "body": "Sin suscripción, DPS prémium, muro de pago ni servidor de licencias. Cualquier futuro café de apoyo será voluntario."}
+    ]},
+    "status": {"eyebrow": "Estado actual", "title": "Base construida. Confianza en directo pendiente.", "body": "El modo Demo y la base local ya existen. La decodificación de AION 2 Global sigue desactivada hasta validar de forma independiente tráfico controlado.", "foundation": "Base del producto", "foundation_note": "Interfaz de demostración, motor de encuentros, historial y contratos estrictos del analizador", "validation": "Validación del protocolo", "validation_note": "A la espera de pruebas controladas de AION 2 Global", "release": "Versión pública para Windows", "release_note": "Solo tras aprobar seguridad, rendimiento y máquina virtual limpia"},
+    "faq": {"title": "Respuestas claras antes de instalar.", "items": [
+      {"question": "¿Puedo descargar CombatGlass ahora?", "answer": "No. Es una vista previa pública de desarrollo; no se publica ningún ejecutable, instalador ni archivo portátil."},
+      {"question": "¿CombatGlass necesita una cuenta o envía telemetría?", "answer": "No. La versión 0.x es exclusivamente local, sin cuentas, telemetría, subidas a la nube ni servidor de licencias."},
+      {"question": "¿Lee la memoria del juego o automatiza acciones?", "answer": "No. La arquitectura prohíbe acceso a memoria, inyección, modificación de paquetes, proxy y automatización de entradas."},
+      {"question": "¿Un medidor pasivo garantiza la seguridad de mi cuenta?", "answer": "Ningún tercero puede garantizarlo. Las normas y su aplicación pueden cambiar; consulta los términos del juego y usa herramientas de terceros bajo tu responsabilidad."}
+    ]},
+    "support": {"eyebrow": "Comunidad", "title": "¿Preguntas, errores o ideas?", "body": "Usa las plantillas públicas de incidencias, pero nunca adjuntes capturas de paquetes, tokens, registros privados ni información personal.", "languages": "Idiomas de la interfaz: inglés, alemán, francés, español (España), portugués (Brasil) y ruso.", "action": "Abrir GitHub"},
+    "disclaimer": {"title": "Proyecto independiente de terceros", "body": "CombatGlass no está afiliado ni respaldado por NC. Un diseño pasivo no garantiza la seguridad de la cuenta. El aviso legal en inglés es el texto jurídico canónico.", "english_link": "Leer el aviso legal canónico en inglés"},
+    "footer": {"independent": "Proyecto independiente de terceros · freeware de código cerrado", "security": "Seguridad", "privacy": "Privacidad", "support": "Soporte"}
+  },
+  "pt-BR": {
+    "meta": {"title": "CombatGlass — Clareza de combate local para AION 2", "description": "Um analisador de combate para Windows, tranquilo e local, para AION 2 Global. Sem conta, telemetria, modificação do jogo ou download público por enquanto."},
+    "nav": {"skip": "Ir para o conteúdo", "aria": "Navegação principal", "trust": "Confiança", "status": "Status", "language": "Idioma"},
+    "hero": {"eyebrow": "Europa primeiro · Pronto para o mundo", "description": "Uma interface discreta no Windows para encontros legíveis, análise útil de habilidades e histórico local — sem tocar no jogo.", "positioning": "Criado primeiro para jogadores europeus e aberto a toda a comunidade global de AION 2.", "promises_aria": "Compromissos do produto", "local": "Processamento local", "account": "Sem conta", "telemetry": "Sem telemetria", "free": "Grátis", "preview": "Prévia de desenvolvimento", "notice": "os downloads ainda não estão disponíveis", "primary": "Explorar a interface", "privacy": "Ler o compromisso de privacidade", "image_alt": "Interface de desenvolvimento do CombatGlass exibindo dano e contribuição do encontro", "image_note": "Dados sintéticos · nenhuma captura necessária"},
+    "interface": {"eyebrow": "O útil primeiro", "title": "Entenda o encontro antes dos detalhes.", "body": "A tela principal responde primeiro o que aconteceu. Habilidades, linha do tempo e diagnóstico continuam acessíveis sem disputar atenção."},
+    "flow": [
+      {"label": "Encontro ao vivo", "title": "Veja o estado do combate na hora", "body": "Estados claros de ativo, pausado e incompatível evitam dados antigos ou certezas inventadas."},
+      {"label": "Detalhes da luta", "title": "Entenda a contribuição", "body": "Uma hierarquia clara leva dos totais às habilidades, acertos críticos e contexto compatível."},
+      {"label": "Histórico local", "title": "Revise no seu computador", "body": "Um histórico limitado de encontros permanece local e pode ser apagado no aplicativo."}
+    ],
+    "trust": {"eyebrow": "O limite faz parte do produto", "title": "Útil sem ser invasivo.", "cards": [
+      {"title": "Local por princípio", "body": "O processamento e o histórico habilitado ficam no computador. Não há conta nem serviço em nuvem."},
+      {"title": "Captura passiva", "body": "Sem leitura de memória, injeção, alteração de pacotes, proxy ou automação de comandos."},
+      {"title": "Falha segura", "body": "Dados de protocolo desconhecidos ou não verificados interrompem a saída em vez de criar resultados enganosos."},
+      {"title": "Grátis primeiro", "body": "Sem assinatura, recursos premium de DPS, paywall ou servidor de licença. Um futuro cafezinho de apoio será voluntário."}
+    ]},
+    "status": {"eyebrow": "Status atual", "title": "Base pronta. Confiança ao vivo pendente.", "body": "O Modo Demo e a base local existem. A decodificação do AION 2 Global permanece desativada até que tráfego controlado seja validado de forma independente.", "foundation": "Base do produto", "foundation_note": "Interface de demonstração, mecanismo de encontros, histórico e contratos rígidos do analisador", "validation": "Validação do protocolo", "validation_note": "Aguardando evidências controladas do AION 2 Global", "release": "Versão pública para Windows", "release_note": "Somente após aprovação de segurança, desempenho e máquina virtual limpa"},
+    "faq": {"title": "Respostas diretas antes da instalação.", "items": [
+      {"question": "Posso baixar o CombatGlass agora?", "answer": "Não. Esta é uma prévia pública de desenvolvimento; nenhum executável, instalador ou arquivo portátil foi publicado."},
+      {"question": "O CombatGlass exige conta ou envia telemetria?", "answer": "Não. A versão 0.x é totalmente local, sem contas, telemetria, envios para a nuvem ou servidor de licença."},
+      {"question": "Ele lê a memória do jogo ou automatiza ações?", "answer": "Não. A arquitetura proíbe acesso à memória, injeção, alteração de pacotes, proxy e automação de comandos."},
+      {"question": "Um medidor passivo garante segurança para minha conta?", "answer": "Nenhum terceiro pode garantir isso. Regras e fiscalização podem mudar; leia os termos do jogo e use ferramentas de terceiros por sua conta e risco."}
+    ]},
+    "support": {"eyebrow": "Comunidade", "title": "Dúvidas, bugs ou ideias para o produto?", "body": "Use os modelos públicos de issues, mas nunca anexe capturas de pacotes, tokens, logs privados ou informações pessoais.", "languages": "Idiomas da interface: inglês, alemão, francês, espanhol (Espanha), português (Brasil) e russo.", "action": "Abrir o GitHub"},
+    "disclaimer": {"title": "Projeto independente de terceiros", "body": "O CombatGlass não é afiliado nem endossado pela NC. Um design passivo não garante a segurança da conta. O aviso em inglês é o texto jurídico canônico.", "english_link": "Ler o aviso canônico em inglês"},
+    "footer": {"independent": "Projeto independente de terceiros · freeware de código fechado", "security": "Segurança", "privacy": "Privacidade", "support": "Suporte"}
+  },
+  "ru": {
+    "meta": {"title": "CombatGlass — Локальный анализ боя в AION 2", "description": "Спокойный локальный анализатор боя для AION 2 Global на Windows. Без аккаунта, телеметрии и изменения игры; публичной загрузки пока нет."},
+    "nav": {"skip": "Перейти к содержанию", "aria": "Основная навигация", "trust": "Доверие", "status": "Статус", "language": "Язык"},
+    "hero": {"eyebrow": "Сначала Европа · Готовность к миру", "description": "Спокойный оверлей Windows: понятные бои, полезный анализ умений и локальная история — без вмешательства в игру.", "positioning": "В первую очередь для игроков Европы, но открыт всему мировому сообществу AION 2.", "promises_aria": "Обязательства продукта", "local": "Локальная обработка", "account": "Без аккаунта", "telemetry": "Без телеметрии", "free": "Бесплатно", "preview": "Предварительная версия", "notice": "загрузка пока недоступна", "primary": "Посмотреть интерфейс", "privacy": "Прочитать о конфиденциальности", "image_alt": "Интерфейс CombatGlass с уроном и вкладом участников боя", "image_note": "Синтетические данные · захват не требуется"},
+    "interface": {"eyebrow": "Сначала полезное", "title": "Сначала поймите бой, затем изучайте детали.", "body": "Главный экран сразу отвечает, что произошло. Умения, временная шкала и диагностика доступны отдельно и не перегружают обзор."},
+    "flow": [
+      {"label": "Текущий бой", "title": "Сразу виден статус боя", "body": "Чёткие состояния активности, паузы и отсутствия поддержки исключают устаревшую или выдуманную уверенность."},
+      {"label": "Подробности боя", "title": "Понятный вклад", "body": "Продуманная иерархия ведёт от итогов к умениям, критическим ударам и доступному контексту."},
+      {"label": "Локальная история", "title": "Анализ на вашем компьютере", "body": "Ограниченная история боёв остаётся локальной и удаляется из приложения."}
+    ],
+    "trust": {"eyebrow": "Ограничения — часть продукта", "title": "Полезно, но не навязчиво.", "cards": [
+      {"title": "Локальность по замыслу", "body": "Обработка и включённая история остаются на компьютере. Нет аккаунта и облачного сервиса."},
+      {"title": "Пассивный захват", "body": "Без чтения памяти, внедрения, изменения пакетов, прокси и автоматизации ввода."},
+      {"title": "Безопасный отказ", "body": "Неизвестные или непроверенные данные протокола останавливают вывод, а не создают правдоподобную ложь."},
+      {"title": "Сначала бесплатно", "body": "Без подписки, платных функций DPS, пейволла и сервера лицензий. Будущая поддержка на кофе — только добровольная."}
+    ]},
+    "status": {"eyebrow": "Текущий статус", "title": "Основа готова. Проверка в игре впереди.", "body": "Демо-режим и локальная основа готовы. Декодирование AION 2 Global отключено до независимой проверки контролируемого трафика.", "foundation": "Основа продукта", "foundation_note": "Демо-интерфейс, движок боёв, история и строгие контракты парсера", "validation": "Проверка протокола", "validation_note": "Ожидаются контролируемые данные AION 2 Global", "release": "Публичная версия для Windows", "release_note": "Только после проверки безопасности, производительности и чистой ВМ"},
+    "faq": {"title": "Прямые ответы до установки.", "items": [
+      {"question": "Можно ли скачать CombatGlass сейчас?", "answer": "Нет. Это публичная предварительная версия; исполняемый файл, установщик и портативный архив не опубликованы."},
+      {"question": "Нужен ли CombatGlass аккаунт и отправляет ли он телеметрию?", "answer": "Нет. Версия 0.x полностью локальна: без аккаунтов, телеметрии, облачных загрузок и сервера лицензий."},
+      {"question": "Программа читает память игры или автоматизирует игру?", "answer": "Нет. Архитектура запрещает доступ к памяти, внедрение, изменение пакетов, прокси и автоматизацию ввода."},
+      {"question": "Пассивный измеритель гарантированно безопасен для аккаунта?", "answer": "Ни один сторонний разработчик не может это гарантировать. Правила и их применение могут меняться; ознакомьтесь с условиями игры и используйте сторонние инструменты на свой риск."}
+    ]},
+    "support": {"eyebrow": "Сообщество", "title": "Вопросы, ошибки или идеи?", "body": "Используйте публичные шаблоны задач, но никогда не прикладывайте дампы пакетов, токены, личные журналы или персональные данные.", "languages": "Языки интерфейса: английский, немецкий, французский, испанский (Испания), португальский (Бразилия) и русский.", "action": "Открыть GitHub"},
+    "disclaimer": {"title": "Независимый сторонний проект", "body": "CombatGlass не связан с NC и не одобрен компанией. Пассивная архитектура не гарантирует безопасность аккаунта. Английский текст отказа от ответственности является основным юридическим текстом.", "english_link": "Читать основной английский текст"},
+    "footer": {"independent": "Независимый сторонний проект · бесплатное ПО с закрытым кодом", "security": "Безопасность", "privacy": "Конфиденциальность", "support": "Поддержка"}
+  }
+}

@@ -10,5 +10,10 @@
 - Moved the product interface into the first desktop viewport and clarified the
   live-encounter -> fight-detail -> local-history hierarchy.
 - Documented the initial completely-free and optional-coffee-support direction.
+- Added localized static product pages for English, German, French, Spanish
+  (Spain), Portuguese (Brazil) and Russian, with local browser-language
+  suggestion, a persistent manual selector, canonical URLs and `hreflang`.
+- Positioned the initial audience around the European AION 2 Global community
+  without region locking or unverified server/protocol claims.
 
 No application binary has been released.

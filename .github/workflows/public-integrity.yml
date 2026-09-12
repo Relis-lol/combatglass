@@ -36,3 +36,33 @@ jobs:
           $html = Get-Content -Raw -LiteralPath index.html
           if ($html -match '(?i)download\s+(now|for windows)|\.exe|\.msi') { throw 'A download claim or binary reference appeared in the site.' }
           foreach ($asset in @('assets/combatglass-mark.svg','assets/product-preview.svg','styles.css')) { if ($html -notmatch [regex]::Escape($asset)) { throw "Unreferenced required asset: $asset" } }
+      - name: Validate localized routes and generated content
+        shell: pwsh
+        run: |
+          node scripts/generate-site.mjs --check
+          $routes = [ordered]@{
+            'index.html' = @('en', 'https://relis-lol.github.io/combatglass/')
+            'de/index.html' = @('de', 'https://relis-lol.github.io/combatglass/de/')
+            'fr/index.html' = @('fr', 'https://relis-lol.github.io/combatglass/fr/')
+            'es/index.html' = @('es-ES', 'https://relis-lol.github.io/combatglass/es/')
+            'pt-br/index.html' = @('pt-BR', 'https://relis-lol.github.io/combatglass/pt-br/')
+            'ru/index.html' = @('ru', 'https://relis-lol.github.io/combatglass/ru/')
+          }
+          $alternates = @('en','de','fr','es-ES','pt-BR','ru','x-default')
+          foreach ($entry in $routes.GetEnumerator()) {
+            if (-not (Test-Path -LiteralPath $entry.Key -PathType Leaf)) { throw "Missing route $($entry.Key)" }
+            $routeHtml = Get-Content -Raw -LiteralPath $entry.Key
+            if ($routeHtml -notmatch ('<html lang="' + [regex]::Escape($entry.Value[0]) + '">')) { throw "Incorrect lang for $($entry.Key)" }
+            if ($routeHtml -notmatch ('<link rel="canonical" href="' + [regex]::Escape($entry.Value[1]) + '">')) { throw "Incorrect canonical for $($entry.Key)" }
+            foreach ($alternate in $alternates) {
+              if ($routeHtml -notmatch ('hreflang="' + [regex]::Escape($alternate) + '"')) { throw "Missing hreflang $alternate in $($entry.Key)" }
+            }
+            $base = Split-Path -Parent $entry.Key
+            if (-not $base) { $base = '.' }
+            foreach ($match in [regex]::Matches($routeHtml, '(?:href|src)="([^"]+)"')) {
+              $target = $match.Groups[1].Value.Split('#')[0].Split('?')[0]
+              if (-not $target -or $target -match '^(?:https?:|mailto:|data:)') { continue }
+              $resolved = Join-Path $base $target
+              if (-not (Test-Path -LiteralPath $resolved)) { throw "Broken local link $target in $($entry.Key)" }
+            }
+          }
