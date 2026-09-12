@@ -24,6 +24,11 @@ CombatGlass is being built as a focused Windows combat analyzer. The default
 view keeps the essentials readable at a glance: encounter state, time, player,
 DPS, total damage and contribution. Detailed analysis stays one click away.
 
+It is intended to remain completely free initially, without subscriptions,
+premium combat features, a paywall or a licence server. Optional coffee support
+may be added only after the maintainer configures a verified destination; no
+donation link is live today.
+
 - Calm, adjustable overlay designed for Windows 10 and 11
 - Local, bounded encounter history
 - Skill contribution and damage timeline when the protocol supports them
@@ -91,4 +96,3 @@ endorsed by NC. A passive design does not justify promises about account safety.
 See the full [Disclaimer](DISCLAIMER.md). CombatGlass is closed-source freeware;
 this public repository contains product documentation and original brand assets,
 not application source code.
-

@@ -2,6 +2,11 @@
 
 CombatGlass is not available for download yet.
 
+The product is intended to remain completely free initially: no subscription,
+premium combat features, paywall or licence server. The maintainer may later
+configure an optional coffee-donation link with no product entitlement. No
+donation destination is configured or linked today.
+
 For documentation problems, product suggestions or reproducible Demo Mode bugs,
 use the repository issue templates. Before submitting:
 
@@ -12,4 +17,3 @@ use the repository issue templates. Before submitting:
   private and narrowly scoped process.
 
 Security issues belong in private vulnerability reporting; see [Security](SECURITY.md).
-

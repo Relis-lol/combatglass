@@ -7,6 +7,8 @@
 - Documented no-download and unverified Global protocol status.
 - Added privacy, security, FAQ, support and disclaimer documents.
 - Added public-repository leakage protection and Pages validation.
+- Moved the product interface into the first desktop viewport and clarified the
+  live-encounter -> fight-detail -> local-history hierarchy.
+- Documented the initial completely-free and optional-coffee-support direction.
 
 No application binary has been released.
-
