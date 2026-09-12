@@ -1,0 +1,39 @@
+name: public-integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  leakage-check:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject application source, captures, secrets and binaries
+        shell: pwsh
+        run: |
+          $forbiddenExtensions = @('.rs','.cs','.cpp','.c','.h','.hpp','.pcap','.pcapng','.exe','.dll','.msi','.msix','.pfx','.p12','.pem','.key','.dmp')
+          $forbiddenNames = @('Cargo.toml','Cargo.lock','.env')
+          $forbiddenDirs = @('src','crates','captures','target','diagnostics','replays')
+          $violations = Get-ChildItem -Recurse -File | Where-Object {
+            $forbiddenExtensions -contains $_.Extension.ToLowerInvariant() -or
+            $forbiddenNames -contains $_.Name -or
+            ($_.FullName -split '[\\/]' | Where-Object { $forbiddenDirs -contains $_ }).Count -gt 0
+          }
+          if ($violations) { $violations.FullName; throw 'Forbidden private/source material detected.' }
+          $secretPatterns = 'BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|gh[pousr]_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}'
+          $secretHits = Get-ChildItem -Recurse -File | Select-String -Pattern $secretPatterns
+          if ($secretHits) { $secretHits.Path | Sort-Object -Unique; throw 'Likely secret detected.' }
+      - name: Validate public entrypoints and local assets
+        shell: pwsh
+        run: |
+          $required = @('README.md','PRIVACY.md','SECURITY.md','FAQ.md','CHANGELOG.md','SUPPORT.md','DISCLAIMER.md','index.html','styles.css','assets/combatglass-mark.svg','assets/product-preview.svg')
+          foreach ($file in $required) { if (-not (Test-Path -LiteralPath $file -PathType Leaf)) { throw "Missing $file" } }
+          $html = Get-Content -Raw -LiteralPath index.html
+          if ($html -match '(?i)download\s+(now|for windows)|\.exe|\.msi') { throw 'A download claim or binary reference appeared in the site.' }
+          foreach ($asset in @('assets/combatglass-mark.svg','assets/product-preview.svg','styles.css')) { if ($html -notmatch [regex]::Escape($asset)) { throw "Unreferenced required asset: $asset" } }
+

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">CombatGlass mark</title>
+  <desc id="desc">A clear faceted lens crossed by a precise signal line</desc>
+  <defs>
+    <linearGradient id="glass" x1="12" y1="10" x2="52" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EF4E8"/>
+      <stop offset="1" stop-color="#319CA9"/>
+    </linearGradient>
+  </defs>
+  <path d="M19 7h26l12 13v24L44 57H20L7 44V20L19 7Z" fill="#0D1724" stroke="url(#glass)" stroke-width="3"/>
+  <path d="M20 17h24l7 8-25 25H20L13 43V26l7-9Z" fill="#4BDDD0" fill-opacity=".13"/>
+  <path d="M13 38h10l5-12 7 20 5-13h11" fill="none" stroke="#8EF4E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+

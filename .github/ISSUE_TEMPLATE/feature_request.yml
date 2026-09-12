@@ -1,0 +1,25 @@
+name: Product idea
+description: Suggest an observation-only improvement
+title: "[Idea]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What player problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested experience
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Observation-only boundary
+      options:
+        - label: This idea does not require memory access, injection, packet modification, input automation, a VPN/proxy or anti-cheat bypass.
+          required: true
+
