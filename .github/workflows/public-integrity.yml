@@ -12,7 +12,7 @@ jobs:
   leakage-check:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Reject application source, captures, secrets and binaries
         shell: pwsh
         run: |
@@ -36,4 +36,3 @@ jobs:
           $html = Get-Content -Raw -LiteralPath index.html
           if ($html -match '(?i)download\s+(now|for windows)|\.exe|\.msi') { throw 'A download claim or binary reference appeared in the site.' }
           foreach ($asset in @('assets/combatglass-mark.svg','assets/product-preview.svg','styles.css')) { if ($html -notmatch [regex]::Escape($asset)) { throw "Unreferenced required asset: $asset" } }
-
