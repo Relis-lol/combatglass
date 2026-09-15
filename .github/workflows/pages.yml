@@ -8,6 +8,14 @@ on:
       - index.html
       - styles.css
       - assets/**
+      - de/index.html
+      - fr/index.html
+      - es/index.html
+      - pt-br/index.html
+      - ru/index.html
+      - locales/site.json
+      - scripts/generate-site.mjs
+      - '*.md'
 
 permissions:
   contents: read
@@ -19,13 +27,21 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  integrity:
+    uses: ./.github/workflows/public-integrity.yml
+    permissions:
+      contents: read
+
   deploy:
+    needs: integrity
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - name: Verify generated public pages
+        run: node scripts/generate-site.mjs --check
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
